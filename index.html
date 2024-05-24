@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/modal.css">
+    <link rel="stylesheet" href="assets/styles/galerry.css">
+    <link rel="stylesheet" href="assets/styles/slideshow.css">
+</head>
+
+<body>
+
+<!-- The Modal button is in the menu -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Best editing service!</p>
+    </div>
+
+</div>
+
+<header>
+    <div class="menu">
+        <a href="#" class="logo">Edit Pro</a>
+        <button class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <button id="myBtn">Open Modal</button>
+            <div class="right-menu" id="menu">
+                <a class="active" href="#">Home</a>
+                <a href="#about">About us</a>
+                <a href="#contact">Contact</a>
+                <a href="#services">Services</a>
+            </div>
+    </div>
+    <img src="assets/pictures/header-foto.jpg" id="header-foto" alt="">
+    <div class="up-text">
+        <h1>
+            Transform your footage today
+        </h1>
+        <h4>Craft compelling stories with our professional video editing services.</h4>
+    </div>
+</header>
+
+<h2 class="gallery-heading">Galerie</h2>
+<img class="gallery-preview" src="assets/pictures/pic1.jpg" alt="security">
+<button class="btn btn-next" onclick="nextImage()">Next</button>
+<button class="btn btn-prev" onclick="prevImage()">Previous</button>
+<div class="gallery">
+    <img class="gallery-pic" src="assets/pictures/pic1.jpg" alt="security">
+    <img src="assets/pictures/pic2.jpg" alt="">
+    <img src="assets/pictures/pic3.jpg" alt="">
+    <img src="assets/pictures/pic4.jpg" alt="">
+    <img src="assets/pictures/pic5.jpg" alt="">
+    <img src="assets/pictures/pic6.jpg" alt="">
+</div>
+
+
+<div class="text">
+    <p class="instroducing">
+        Introducing Edit Pro, your go-to solution for professional video editing services located in the Zlín District, Zlín Region. With a team of skilled editors and cutting-edge technology, we are dedicated to bringing your vision to life with precision and creativity. Trust Edit Pro to elevate your video content and make a lasting impact on your audience.
+    </p>
+</div>
+
+
+<img class="middlepicture" src="assets/pictures/middlepick.jpg" alt="#">
+
+<div class="section1">
+    <div class="left-side">
+        <h2>Elevate your video editing with Edit Pro</h2>
+        <p>
+            Located in the Zlín District, Zlín Region, Edit Pro specializes in professional video editing services. Trust our experts to bring your vision to life with top-notch editing techniques. Enhance your videos with Edit Pro today.
+        </p>
+        <a class="button" href="#contact">View more</a>
+    </div>
+
+    <div class="right-side">
+        <img src="assets/pictures/right-pick.jpg" id="right-pick" alt="">
+    </div>
+</div>
+<div id="services" class="nothing"></div>
+
+<div class="section2">
+    <h2>Services</h2>
+    <div class="boxes">
+        <div class="box">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <h3>Professional Video Editing</h3>
+            <p>Expert editing services to enhance your videos.</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Color Grading Expertise</h3>
+            <p>Enhance the visual appeal of your videos with our color grading.</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-volume-high"></i>
+            <h3>Audio Mixing and Editing</h3>
+            <p>Ensure crisp sound quality with our audio editing services.</p>
+        </div>
+        <div class="box">
+            <i class="fa-regular fa-face-smile"></i>
+            <h3>Custom Effects and Transitions</h3>
+            <p>Unique effects and transitions tailored to your video needs</p>
+        </div>
+    </div>
+</div>
+
+<div class="section3">
+    <div class="Gallery">
+        <img src="assets/pictures/img1.png" id="img1" alt="">
+        <p class="review">
+            Edit Pro exceeded my expectations! Their video editing services are top-notch. The team was professional, efficient, and delivered exceptional results. I am grateful for their expertise and dedication. Thank you, Edit Pro, for your outstanding work!        </p>
+        <p class="author">- Lukas</p>
+    </div>
+    <div class="Gallery">
+        <img src="assets/pictures/img2.png" id="img2" alt="">
+        <p class="review">
+            Edit Pro is phenomenal! Their video editing services are top-notch and exceeded all my expectations. The team was professional, creative, and delivered exceptional results. Thank you, Edit Pro, for your outstanding work!        </p>
+        <p class="author">- Sophia</p>
+    </div>
+    <div class="Gallery">
+        <img src="assets/pictures/img3.png" id="img3" alt="">
+        <p class="review">
+            Edit Pro transformed my raw footage into a stunning video, capturing every detail beautifully - their service in Zlín District is exceptional!        </p>
+        <p class="author">- Abraham</p>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+<div id="about" class="idk">
+    <hr>
+    <hr>
+    <hr>
+</div>
+
+<div class="about">
+    <h2>About us</h2>
+    <p>
+        Welcome to Edit Pro, your go-to destination for professional video editing services. Located in the heart of the Zlín District in the Zlín Region, we are dedicated to providing high-quality video editing solutions for individuals and businesses alike.
+    </p>
+    <p>
+        With a team of experienced and creative professionals, we are committed to delivering exceptional results that exceed our clients' expectations. Whether you need video editing for personal projects or corporate needs, Edit Pro is here to bring your vision to life.
+    </p>
+</div>
+
+<div id="contact" class="nothing"></div>
+
+<div class="enhance">
+    <h2>Enhance Your Videos Today</h2>
+    <p>Professional video editing services in Zlín District. Elevate your content quality.</p>
+    <a class="button" href="https://x.com/TrhlikVit">View more<i class="fa-brands fa-twitter"></i></a>
+</div>
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83372.4282378182!2d17.594106796554783!3d49.23112529658327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47130cad4c888e0d%3A0x418d4c16a8ac214f!2zWmzDrW4!5e0!3m2!1scs!2scz!4v1716311416563!5m2!1scs!2scz" width="1920" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<script src="assets/scripts/slideshow.js"></script>
+<script src="assets/scripts/modal.js"></script>
+<script src="assets/scripts/galerry.js"></script>
+</body>
+</html>
