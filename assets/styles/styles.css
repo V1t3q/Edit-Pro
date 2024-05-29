@@ -36,8 +36,8 @@ body {
 .menu {
     z-index: 999;
     position: fixed;
-    <!--border: 3px var(--white) solid;
-    border-radius:10px;-->
+    //border: 3px var(--white) solid;
+    //border-radius:10px;
     width: 97.7%;
     overflow: hidden;
     background-color: var(--dark_blue);
